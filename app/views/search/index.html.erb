@@ -1,0 +1,14 @@
+<h1>State Representitives For Colorado</h1>
+
+<h2>There are <%= @reps.count %> results</h2>
+
+<ul>
+  <% @reps.each do |rep, i| %>
+    <li class="<%= i %>>">
+      <%= rep.name %>
+      <%= rep.role %>
+      <%= rep.party %>
+      <%= rep.district %>
+    </li>
+  <% end %>
+</ul>

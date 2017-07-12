@@ -8,6 +8,7 @@ describe 'A user can find house of representative members by state' do
       select 'Colorado', from: 'state'
       click_button('Locate Members of the House')
       expect(page).to have_content('State Representitives For Colorado')
+      expect(page).to have_content('There are 7 results')
     end
   end
 end

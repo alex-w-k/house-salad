@@ -9,6 +9,5 @@ class SearchController < ApplicationController
     @reps = results.map do |rep|
       Representitive.new(rep)
     end
-    binding.pry
   end
 end

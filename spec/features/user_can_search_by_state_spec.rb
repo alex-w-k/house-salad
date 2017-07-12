@@ -9,6 +9,12 @@ describe 'A user can find house of representative members by state' do
       click_button('Locate Members of the House')
       expect(page).to have_content('State Representitives For Colorado')
       expect(page).to have_content('There are 7 results')
+      within first('.rep') do
+        expect(page).to have_content('Diana DeGette')
+      end
+      within all('.rep').last do
+        expect(page).to have_content('Ken Buck')
+      end
     end
   end
 end

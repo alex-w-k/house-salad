@@ -16,8 +16,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'materialize-sass', :git => 'https://github.com/mkhairi/materialize-sass'
+gem 'will_paginate-materialize', github: 'harrybournis/will_paginate-materialize'
 
 group :development, :test do
+  gem 'pry'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'capybara'

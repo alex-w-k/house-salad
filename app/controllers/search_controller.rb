@@ -9,5 +9,7 @@ class SearchController < ApplicationController
     @reps = results.map do |rep|
       Representitive.new(rep)
     end
+    @reps.sort_by! &:seniority
+    @reps.reverse!
   end
 end

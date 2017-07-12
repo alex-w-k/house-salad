@@ -4,7 +4,7 @@ class Representitive
     @name = args["name"]
     @role = args["role"]
     @party = args["party"]
-    @seniority = args["seniority"]
+    @seniority = args["seniority"].to_i
     @district = args["district"]
   end
 end

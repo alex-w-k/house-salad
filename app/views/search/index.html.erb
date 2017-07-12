@@ -4,11 +4,11 @@
 
 <ul>
   <% @reps.each do |rep, i| %>
-    <li class="<%= i %>>">
-      <%= rep.name %>
-      <%= rep.role %>
-      <%= rep.party %>
-      <%= rep.district %>
+    <li class="rep">
+      name: <%= rep.name %><br>
+      role: <%= rep.role %><br>
+      party affiliation: <%= rep.party %><br>
+      district: <%= rep.district %><br>
     </li>
   <% end %>
 </ul>
